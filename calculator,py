@@ -1,0 +1,20 @@
+'''simple calculator operations using function'''
+
+userInput = input("What you want to operate: +, -, *, / :  ")
+fnumb = int(input("give a 1st number: "))
+snumb = int(input("give a 2nd number: "))
+
+def calculator(usIn,a,b):
+    if usIn == "+":
+        return a + b
+    elif usIn == "-":
+        return a-b
+    elif usIn == "*":
+        return a*b
+    elif usIn == "/":
+        return  a/b
+    else:
+        print("please enter a valid operator:")
+
+res = calculator(userInput,fnumb,snumb)
+print(f"Result: {res}")
