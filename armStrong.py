@@ -1,16 +1,21 @@
 '''a program to check Armstrong number'''
 
-userInput = input("give me a Number: ")
-inputLen = len(userInput)
+#153: 13+53+33=153
 
 
-def armStrong(num):
-    sum = 0
-    for i in num:
-        sum += pow(int(i),inputLen)
-    if sum == int(num):
-        print("This is a Armstrong Number")
+
+nu ='153'
+
+def armstrong(nu):
+    sum=0
+    leng=len(nu)
+    for i in nu:
+        sum += int(i)**leng
+    if sum == int(nu):
+        print("its a Armstrong Number")
     else:
-        print("this is not a armstrong number")
+        print("its not  armstrong number")
 
-armStrong(userInput)
+armstrong("153")
+armstrong("47")
+armstrong("1")

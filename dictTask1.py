@@ -5,16 +5,18 @@ dict1 = {"mango": 45,"orange":30,"kiwi": 100,"grapes":80,"fig":120}
 
 
 
-def highestprice(dictt):
+def highPrice(dict1):
     temp = 0
-    costlyItem = {}
-    for i,j in dictt.items():
-        if j >= temp:
+    newdict = {}
+    for i,j in dict1.items():
+        if j > temp:
             temp = j
-            costlyItem ={i:j}
-    return costlyItem
+            newdict = {i:j}
+         
+    return newdict
 
-print(highestprice(dict1))
+print(highPrice(dict1))
+
 
     
 
